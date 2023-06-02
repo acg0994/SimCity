@@ -1,0 +1,23 @@
+<div class="main">
+  <div class="estructure">
+    <iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="1500"
+    height="600"
+    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+  </iframe>
+  <div [ngClass]="{'moveUp': showbutton}">
+    <div *ngIf="showbutton" class="showElement">
+      <div class="blue"></div>
+      <div class="iconsOfMap">
+        <img class="icon" src="../assets/Imagenes/carretera.png">
+        <img class="icon" src="../assets/Imagenes/casa.png">
+        <img class="icon" src="../assets/Imagenes/construccion.png">
+        <img class="icon" src="../assets/Imagenes/parque.png">
+      </div>
+    </div>
+    <button (click)="showElement(showbutton)" class="simcity-build-button"></button>
+  </div>
+  </div>
+</div>
+

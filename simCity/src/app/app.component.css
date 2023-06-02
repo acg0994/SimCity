@@ -1,0 +1,49 @@
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.estructure {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.simcity-build-button {
+  width: 60px;
+  height: 60px;
+  margin-top: 5px;
+  border: none;
+  background-repeat: no-repeat;
+  background-image: url(../assets/Imagenes/informacion.png);
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.showElement {
+  display: flex;
+  flex-direction: column;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+}
+.blue {
+  width: 600px;
+  height: 50px;
+  background-color: #325a7f;
+}
+.iconsOfMap {
+  width: 600px;
+  height: 60px;
+  padding-top: 5px;
+  background-color: #87bff3;
+  display: flex;
+  justify-content: space-around;
+}
+.moveUp {
+  transform: translate(0px, -115px);
+}
+
+
