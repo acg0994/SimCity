@@ -1,5 +1,139 @@
-.main {
-  background-image: url(../src/assets/Imagenes/fondo.jpg);
-  background-size: cover;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.iframe-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.iframe-wrapper-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 8vh;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-image: url(../src/assets/Imagenes/sim.png);
   background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+img {
+  width: 30px;
+}
+
+button {
+  border-style: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(145, 138, 138, 0.9);
+  /* background-color: #D5D6D6; */
+
+}
+
+.button-wrapper {
+    position: absolute;
+    bottom: 100%; /* Mover los botones por encima del .navigation */
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    transform: translateY(9px);
+    margin-left: 182px; /* Ajustar el valor según la separación deseada */
+  }
+
+.button-wrapper {
+  position: absolute;
+  bottom: 100%; /* Mover los botones por encima del .navigation */
+  left: 0;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  transform: translateY(9px);
+  margin-left: 182px; /* Ajustar el valor según la separación deseada */
+}
+.service-info.active {
+  transform: translateX(0);
+}
+
+.info {
+  position: absolute;
+  left: 80%;
+  height: 80vh;
+}
+
+.infoNone {
+  display: none;
+}
+.imgToShow {
+  width: 100%;
+  height: 90vh;
+}
+.button-global {
+  cursor: none;
+  position: absolute;
+  left: 4%;
+  top: 87.5%;
+  width: 40px;
+  height: 40px;
+  @media screen and (max-width: 1500px) {
+    left: 5%;
+  }
+  @media screen and (max-width: 1100px) {
+    left: 7%;
+  }
+  @media screen and (max-width: 700px) {
+    left: 10%;
+  }
+  @media screen and (max-width: 450px) {
+    left: 15%;
+  }
+}
+.button-proponent {
+  cursor:none;
+  position: absolute;
+  left: 1%;
+  top: 85%;
+  width: 50px;
+  height: 50px;
+  @media screen and (max-width: 1500px) {
+    left: 0.5%;
+  }
+}
+.ñapa {
+  height: 50px;
+  width: 60px;
+  background-color: white;
+  position: absolute;
+  left: 1%;
+  top: 2%;
 }
